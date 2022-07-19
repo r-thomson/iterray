@@ -1,5 +1,3 @@
-# iterray
-
 Versions of `Array.prototype` methods that work on iterables/iterators.
 
 ## Why Should You Use This?
