@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "tape 'src/**/*.test.js' | faucet"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^5.5.3"
+  }
+}
