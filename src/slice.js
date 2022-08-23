@@ -13,7 +13,9 @@
  * @see Array.prototype.slice
  */
 export default function* (iterable, start = 0, end = undefined) {
-    if (start < 0 || end < 0) throw RangeError('Negative slicing is not supported');
+    if (start < 0 || end < 0) {
+        throw RangeError('Slice indices must be non-negative');
+    }
 
     const iterator = iterable[Symbol.iterator]();
     for (let i = 0; end === undefined || i < end; i++) {
