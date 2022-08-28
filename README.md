@@ -44,7 +44,7 @@ Here's what's currently included:
 * `.findIndex()` ✗
 * ~~`.findLast()`~~
 * ~~`.findLastIndex()`~~
-* `.flat()` ✗
+* `.flat()` ✓
 * `.flatMap()` ✗
 * ~~`.forEach()`~~
 * `.includes()` ✗
