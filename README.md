@@ -34,7 +34,7 @@ As a general rule, an `Array.prototype` function won't be included if:
 Here's what's currently included:
 
 * ~~`.at()`~~
-* `.concat()` ✗
+* `.concat()` ✓
 * `.copyWithin()` ✗
 * `.entries()` ✓
 * `.every()` ✗
