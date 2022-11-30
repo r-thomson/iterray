@@ -1,10 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "test": "tape 'src/**/*.test.js' | faucet"
+    "build": "tsc",
+    "test": "tsc && tape 'dist/**/*.test.js' | faucet"
   },
   "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/tape": "^4.13.2",
     "faucet": "0.0.1",
-    "tape": "^5.5.3"
+    "tape": "^5.5.3",
+    "typescript": "^4.9.3"
   }
 }
