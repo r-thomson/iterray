@@ -37,7 +37,7 @@ Here's what's currently included:
 * `.concat()` ✓
 * `.copyWithin()` ✗
 * `.entries()` ✓
-* `.every()` ✗
+* `.every()` ✓
 * `.fill()` ✗
 * `.filter()` ✓
 * `.find()` ✗
@@ -60,7 +60,7 @@ Here's what's currently included:
 * ~~`.reverse()`~~
 * ~~`.shift()`~~
 * `.slice()` ✓
-* `.some()` ✗
+* `.some()` ✓
 * ~~`.sort()`~~
 * `.splice()` ✗
 * ~~`.unshift()`~~
