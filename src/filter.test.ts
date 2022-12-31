@@ -12,10 +12,22 @@ for (const [input, callbackFn, thisArg] of <Parameters<typeof iterFilter>[]>[
 	[[1, 2, 3], () => undefined],
 	[[1, 2, 3], (x: number) => x > 1],
 	[[1, 2, 3], (_, i) => i > 0],
-	[[1, 2, 3], function(this: boolean) { return this; }, true],
-	[[1, 2, 3], function(this: boolean) { return this; }, false],
+	[
+		[1, 2, 3],
+		function (this: boolean) {
+			return this;
+		},
+		true,
+	],
+	[
+		[1, 2, 3],
+		function (this: boolean) {
+			return this;
+		},
+		false,
+	],
 ]) {
-	test('equivalent to Array.prototype.filter', async t => {
+	test('equivalent to Array.prototype.filter', async (t) => {
 		const actual = Array.from(iterFilter(input, callbackFn, thisArg));
 		const expected = Array.from(input).filter(callbackFn, thisArg);
 
@@ -23,7 +35,7 @@ for (const [input, callbackFn, thisArg] of <Parameters<typeof iterFilter>[]>[
 	});
 }
 
-test('throws TypeError if callback is not a function', async t => {
+test('throws TypeError if callback is not a function', async (t) => {
 	t.throws(() => {
 		Array.from(iterFilter([], 'not a function' as any));
 	}, TypeError);

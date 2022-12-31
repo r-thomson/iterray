@@ -14,7 +14,7 @@ for (const [input, depth] of <Parameters<typeof iterFlat>[]>[
 	[[[[]]], 2],
 	[[[[]]], Infinity],
 ]) {
-	test('equivalent to Array.prototype.flat', async t => {
+	test('equivalent to Array.prototype.flat', async (t) => {
 		const actual = Array.from(iterFlat(input, depth));
 		const expected = Array.from(input).flat(depth);
 

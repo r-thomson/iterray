@@ -9,7 +9,7 @@ for (const input of <Parameters<typeof iterEntries>[]>[
 	['a', 1, false, null, undefined],
 	['a', , 'c', , , 'f'],
 ]) {
-	test('equivalent to Array.prototype.entries', async t => {
+	test('equivalent to Array.prototype.entries', async (t) => {
 		const actual = Array.from(iterEntries(input));
 		const expected = Array.from(input.entries());
 
