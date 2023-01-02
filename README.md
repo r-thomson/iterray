@@ -47,8 +47,8 @@ Here's what's currently included:
 * `.flat()` ✓
 * `.flatMap()` ✗
 * ~~`.forEach()`~~
-* `.includes()` ✗
-* `.indexOf()` ✗
+* `.includes()` ✓
+* `.indexOf()` ✓
 * ~~`.join()`~~
 * `.keys()` ✓
 * ~~`.lastIndexOf()`~~
