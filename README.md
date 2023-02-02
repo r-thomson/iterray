@@ -40,8 +40,8 @@ Here's what's currently included:
 * `.every()` ✓
 * `.fill()` ✗
 * `.filter()` ✓
-* `.find()` ✗
-* `.findIndex()` ✗
+* `.find()` ✓
+* `.findIndex()` ✓
 * ~~`.findLast()`~~
 * ~~`.findLastIndex()`~~
 * `.flat()` ✓
